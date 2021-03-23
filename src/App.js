@@ -1,34 +1,50 @@
 import React from 'react';
-import PropTypes from "prop-types";
-
-class App extends React.Component{  // state : object, data of component를 넣을 공간이 있다.
+import axios from 'axios';
+import Movie from './Movie';
+import './App.css';
+class App extends React.Component {
   state = {
-    count: 0
+    isLoading: true,
+    movies: [],
   };
-  add = () => {
-    console.log("add");
-    // this.state.count += 1;
-    // console.log(this.state.count);
-    this.setState({ how : this.state.count + 1 });  // state 내에 존재하면 value만 변경, 존재하지 않는 객체는 새로 만들어준다.
-    console.log(this.state.count);
-    console.log(this.state.how);
-    console.log(this.state);
+
+  getMovies = async () => {
+    const {
+      data: {
+        data: { movies },
+      },
+    } = await axios.get('https://yts-proxy.nomadcoders1.now.sh/list_movies.json/?sort_by=rating');
+    this.setState({ movies, isLoading: false });
   };
-  minus = () => {
-    console.log("minus");
-    // this.state.count -= 1;
-    // console.log(this.state.count);
-    this.setState(current => ({ count : current.count - 1 }));  // 꼭 current일 필요없다.
-    console.log(this.state.count);
-  };
+
+  componentDidMount() {
+    this.getMovies();
+  }
+
   render() {
+    const { movies, isLoading } = this.state;
     return (
-      <div>
-        <h1>The number is: {this.state.count}</h1>
-        <button onClick={this.add}>Add</button>
-        <button onClick={this.minus}>Minus</button>
-      </div>
-    )
+      <section className="container">
+        {isLoading ? (
+          <div className="loader">
+            <span className="loader__text">Loading...</span>
+          </div>
+        ) : (
+          <div className="movies">
+            {movies.map((movie) => (
+              <Movie
+                key={movie.id}
+                title={movie.title}
+                summary={movie.summary}
+                year={movie.year}
+                poster={movie.medium_cover_image}
+                genres={movie.genres}
+              />
+            ))}
+          </div>
+        )}
+      </section>
+    );
   }
 }
 
