@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/repository%EC%A3%BC%EC%86%8C/static/css/main.1459a44c.chunk.css",
-    "main.js": "/repository%EC%A3%BC%EC%86%8C/static/js/main.ac89d9d4.chunk.js",
-    "main.js.map": "/repository%EC%A3%BC%EC%86%8C/static/js/main.ac89d9d4.chunk.js.map",
-    "runtime-main.js": "/repository%EC%A3%BC%EC%86%8C/static/js/runtime-main.4de77cce.js",
-    "runtime-main.js.map": "/repository%EC%A3%BC%EC%86%8C/static/js/runtime-main.4de77cce.js.map",
-    "static/js/2.19c8bb08.chunk.js": "/repository%EC%A3%BC%EC%86%8C/static/js/2.19c8bb08.chunk.js",
-    "static/js/2.19c8bb08.chunk.js.map": "/repository%EC%A3%BC%EC%86%8C/static/js/2.19c8bb08.chunk.js.map",
-    "index.html": "/repository%EC%A3%BC%EC%86%8C/index.html",
-    "static/css/main.1459a44c.chunk.css.map": "/repository%EC%A3%BC%EC%86%8C/static/css/main.1459a44c.chunk.css.map",
-    "static/js/2.19c8bb08.chunk.js.LICENSE.txt": "/repository%EC%A3%BC%EC%86%8C/static/js/2.19c8bb08.chunk.js.LICENSE.txt"
+    "main.css": "/React-Movie-App/static/css/main.1459a44c.chunk.css",
+    "main.js": "/React-Movie-App/static/js/main.ac89d9d4.chunk.js",
+    "main.js.map": "/React-Movie-App/static/js/main.ac89d9d4.chunk.js.map",
+    "runtime-main.js": "/React-Movie-App/static/js/runtime-main.992f1d58.js",
+    "runtime-main.js.map": "/React-Movie-App/static/js/runtime-main.992f1d58.js.map",
+    "static/js/2.19c8bb08.chunk.js": "/React-Movie-App/static/js/2.19c8bb08.chunk.js",
+    "static/js/2.19c8bb08.chunk.js.map": "/React-Movie-App/static/js/2.19c8bb08.chunk.js.map",
+    "index.html": "/React-Movie-App/index.html",
+    "static/css/main.1459a44c.chunk.css.map": "/React-Movie-App/static/css/main.1459a44c.chunk.css.map",
+    "static/js/2.19c8bb08.chunk.js.LICENSE.txt": "/React-Movie-App/static/js/2.19c8bb08.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.4de77cce.js",
+    "static/js/runtime-main.992f1d58.js",
     "static/js/2.19c8bb08.chunk.js",
     "static/css/main.1459a44c.chunk.css",
     "static/js/main.ac89d9d4.chunk.js"
